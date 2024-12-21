@@ -18,6 +18,9 @@ app.use(cors({
   credentials: true
 }))
 
+app.get('/', (req, res) => {
+  res.send("Wokring")
+})
 app.use('/api/auth', authRouter)
 app.use('/api/messages', messageRoutes)
 
